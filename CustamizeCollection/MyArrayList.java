@@ -3,16 +3,16 @@ class MyArrayList {
     private int[] data;
     private int size;
 
-    public MyArrayList() {
+            public MyArrayList() {
         data = new int[5]; 
         size = 0;
     }
 
     public void add(int value) {
         if (size == data.length) {
-            resize();
+            reSize();
         }
-        data[size++] = value;
+              data[size++] = value;
     }
 
     public int get(int index) {
@@ -36,7 +36,7 @@ class MyArrayList {
         System.out.println();
     }
 
-    private void resize() {
+    private void reSize() {
         int[] newData = new int[data.length * 2];
         for (int i = 0; i < data.length; i++) {
             newData[i] = data[i];
