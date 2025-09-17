@@ -54,6 +54,8 @@ class MyArrayList {
         System.out.println("Element at index 1: " + list.get(1)); 
 
         list.remove(1);
-        list.display(); 
+        list.display();
+
+        System.out.println("Completed");
     }
 }
